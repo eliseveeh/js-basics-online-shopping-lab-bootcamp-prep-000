@@ -71,5 +71,3 @@ function placeOrder(cardNum){
       cart = [];
 }
 }
-
-
