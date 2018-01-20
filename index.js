@@ -51,3 +51,13 @@ function total() {
   }
   return total;
 }
+
+function removeFromCart(toRemove){
+  for (var x = 0; x < cart.length; x++){
+    if (Object.values(cart[x]) === toRemove){
+      delete cart[toRemove];
+      return cart;
+    }
+  }
+  return 'That item is not in your cart.'
+}
