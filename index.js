@@ -1,7 +1,7 @@
 var cart = [];
 
 function getCart() {
- return cart;
+return cart;
 }
 
 function setCart(c) {
@@ -54,8 +54,9 @@ function total() {
 
 function removeFromCart(toRemove){
   for (var x = 0; x < cart.length; x++){
-    if (Object.keys(cart[x]) === toRemove){
-      delete cart[toRemove];
+    console.log(Object.keys(cart[x]), toRemove);
+    if (Object.keys(cart[x]).toString() === toRemove){
+      delete cart[x];
       return cart;
     }
   }
