@@ -47,7 +47,7 @@ console.log(finalStat)
 function total() {
   var total = 0;
   for (var x = 0; x < cart.length; x++){
-    total += Object.values(cart[x]);
+    total += Number(Object.values(cart[x]));
   }
   return total;
 }
