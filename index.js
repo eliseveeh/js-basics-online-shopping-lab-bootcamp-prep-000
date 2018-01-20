@@ -55,7 +55,7 @@ function total() {
 function removeFromCart(toRemove){
   for (var x = 0; x < cart.length; x++){
     console.log(Object.keys(cart[x]), toRemove);
-    if (Object.keys(cart[x]).toString() === toRemove){
+    if (cart[x].hasOwnProperty(toRemove) === true){
       delete cart[x];
       return cart;
     }
